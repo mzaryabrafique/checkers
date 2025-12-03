@@ -19,12 +19,13 @@
 package ownerv1connect
 
 import (
-	v1 "buf.build/gen/go/bufbuild/registry/protocolbuffers/go/buf/registry/owner/v1"
-	connect "connectrpc.com/connect"
 	context "context"
 	errors "errors"
 	http "net/http"
 	strings "strings"
+
+	v1 "buf.build/gen/go/bufbuild/registry/protocolbuffers/go/buf/registry/owner/v1"
+	connect "connectrpc.com/connect"
 )
 
 // This is a compile-time assertion to ensure that this generated file and the connect package are

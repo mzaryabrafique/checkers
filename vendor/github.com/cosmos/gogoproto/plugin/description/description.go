@@ -78,6 +78,7 @@ import (
 	"bytes"
 	"compress/gzip"
 	"fmt"
+
 	"github.com/cosmos/gogoproto/gogoproto"
 	"github.com/cosmos/gogoproto/proto"
 	descriptor "github.com/cosmos/gogoproto/protoc-gen-gogo/descriptor"

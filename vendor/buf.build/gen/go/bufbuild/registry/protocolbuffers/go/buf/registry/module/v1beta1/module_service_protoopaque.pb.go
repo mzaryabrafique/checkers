@@ -23,12 +23,13 @@
 package modulev1beta1
 
 import (
+	reflect "reflect"
+	unsafe "unsafe"
+
 	_ "buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go/buf/validate"
 	v1 "buf.build/gen/go/bufbuild/registry/protocolbuffers/go/buf/registry/owner/v1"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	unsafe "unsafe"
 )
 
 const (

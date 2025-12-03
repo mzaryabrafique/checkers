@@ -19,9 +19,10 @@
 package v1pluginrpc
 
 import (
-	v1 "buf.build/gen/go/bufbuild/bufplugin/protocolbuffers/go/buf/plugin/info/v1"
 	context "context"
 	fmt "fmt"
+
+	v1 "buf.build/gen/go/bufbuild/bufplugin/protocolbuffers/go/buf/plugin/info/v1"
 	pluginrpc "pluginrpc.com/pluginrpc"
 )
 

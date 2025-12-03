@@ -68,7 +68,6 @@ func (n *Netrc) Machines() Machines {
 	return n.machines
 }
 
-
 // Machine gets a machine by name
 func (n *Netrc) Machine(name string) *Machine {
 	for _, m := range n.machines {

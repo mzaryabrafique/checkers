@@ -21,12 +21,13 @@
 package modulev1alpha1
 
 import (
+	reflect "reflect"
+	unsafe "unsafe"
+
 	v1 "github.com/bufbuild/buf/private/gen/proto/go/buf/alpha/breaking/v1"
 	v11 "github.com/bufbuild/buf/private/gen/proto/go/buf/alpha/lint/v1"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	unsafe "unsafe"
 )
 
 const (

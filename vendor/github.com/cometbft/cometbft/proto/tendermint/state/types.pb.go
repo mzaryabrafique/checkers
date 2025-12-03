@@ -5,6 +5,11 @@ package state
 
 import (
 	fmt "fmt"
+	io "io"
+	math "math"
+	math_bits "math/bits"
+	time "time"
+
 	types "github.com/cometbft/cometbft/abci/types"
 	types1 "github.com/cometbft/cometbft/proto/tendermint/types"
 	version "github.com/cometbft/cometbft/proto/tendermint/version"
@@ -12,10 +17,6 @@ import (
 	proto "github.com/cosmos/gogoproto/proto"
 	_ "github.com/cosmos/gogoproto/types"
 	github_com_cosmos_gogoproto_types "github.com/cosmos/gogoproto/types"
-	io "io"
-	math "math"
-	math_bits "math/bits"
-	time "time"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

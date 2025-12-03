@@ -2,6 +2,7 @@ package fastreflection
 
 import (
 	"fmt"
+
 	"github.com/cosmos/cosmos-proto/generator"
 	"google.golang.org/protobuf/reflect/protoreflect"
 

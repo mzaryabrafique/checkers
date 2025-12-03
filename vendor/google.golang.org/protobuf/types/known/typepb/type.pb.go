@@ -34,13 +34,14 @@
 package typepb
 
 import (
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
 	sourcecontextpb "google.golang.org/protobuf/types/known/sourcecontextpb"
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
 )
 
 // The syntax in which a protocol buffer element is defined.

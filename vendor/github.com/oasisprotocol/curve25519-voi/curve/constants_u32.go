@@ -178,7 +178,7 @@ var constEDWARDS_D_MINUS_ONE_SQUARED = field.NewElement2625(
 	15551776, 22456977, 53683765, 23429360, 55212328, 10178283, 40474537, 4729243, 61826754, 23438029,
 )
 
-/// `= sqrt(a*d - 1)`, where `a = -1 (mod p)`, `d` are the Edwards curve parameters.
+// / `= sqrt(a*d - 1)`, where `a = -1 (mod p)`, `d` are the Edwards curve parameters.
 var constSQRT_AD_MINUS_ONE = field.NewElement2625(
 	24849947, 33400850, 43495378, 6347714, 46036536, 32887293, 41837720, 18186727, 66238516, 14525638,
 )

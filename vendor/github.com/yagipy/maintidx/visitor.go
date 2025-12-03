@@ -1,11 +1,12 @@
 package maintidx
 
 import (
-	"github.com/yagipy/maintidx/pkg/cyc"
-	"github.com/yagipy/maintidx/pkg/halstvol"
 	"go/ast"
 	"math"
 	"sort"
+
+	"github.com/yagipy/maintidx/pkg/cyc"
+	"github.com/yagipy/maintidx/pkg/halstvol"
 )
 
 type Visitor struct {

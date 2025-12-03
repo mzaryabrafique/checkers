@@ -58,12 +58,11 @@ var zeroRandomizer [scalar.ScalarSize]byte
 //
 // From the paper:
 //
-//   Of course, it is also safe to simply generate z_i as a uniform
-//   random b-bit integer, disregarding the negligible chance that
-//   z_i == 0; but this requires minor technical modifications to
-//   the security guarantees stated below, so we prefer to require
-//   z != 0.
-//
+//	Of course, it is also safe to simply generate z_i as a uniform
+//	random b-bit integer, disregarding the negligible chance that
+//	z_i == 0; but this requires minor technical modifications to
+//	the security guarantees stated below, so we prefer to require
+//	z != 0.
 func FixRawRangeVartime(rawScalar *[scalar.ScalarSize]byte) {
 	// From the paper:
 	//

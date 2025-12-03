@@ -34,13 +34,14 @@
 package apipb
 
 import (
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	sourcecontextpb "google.golang.org/protobuf/types/known/sourcecontextpb"
 	typepb "google.golang.org/protobuf/types/known/typepb"
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
 )
 
 // Api is a light-weight descriptor for an API Interface.

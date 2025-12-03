@@ -29,8 +29,9 @@
 package io
 
 import (
-	"github.com/cosmos/gogoproto/proto"
 	"io"
+
+	"github.com/cosmos/gogoproto/proto"
 )
 
 type Writer interface {

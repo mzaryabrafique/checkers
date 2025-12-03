@@ -32,8 +32,9 @@ import (
 	"bufio"
 	"encoding/binary"
 	"errors"
-	"github.com/cosmos/gogoproto/proto"
 	"io"
+
+	"github.com/cosmos/gogoproto/proto"
 )
 
 var (

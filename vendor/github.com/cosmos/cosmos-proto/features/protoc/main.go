@@ -7,18 +7,19 @@ package protoc
 
 import (
 	"fmt"
-	"github.com/cosmos/cosmos-proto/features/protoc/genid"
-	"github.com/cosmos/cosmos-proto/generator"
 	"go/ast"
 	"go/parser"
 	"go/token"
-	"google.golang.org/protobuf/encoding/protowire"
-	"google.golang.org/protobuf/proto"
 	"math"
 	"strconv"
 	"strings"
 	"unicode"
 	"unicode/utf8"
+
+	"github.com/cosmos/cosmos-proto/features/protoc/genid"
+	"github.com/cosmos/cosmos-proto/generator"
+	"google.golang.org/protobuf/encoding/protowire"
+	"google.golang.org/protobuf/proto"
 
 	pref "google.golang.org/protobuf/reflect/protoreflect"
 

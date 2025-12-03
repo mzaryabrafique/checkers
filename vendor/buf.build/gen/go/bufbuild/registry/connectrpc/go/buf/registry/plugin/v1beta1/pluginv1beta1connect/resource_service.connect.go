@@ -19,12 +19,13 @@
 package pluginv1beta1connect
 
 import (
-	v1beta1 "buf.build/gen/go/bufbuild/registry/protocolbuffers/go/buf/registry/plugin/v1beta1"
-	connect "connectrpc.com/connect"
 	context "context"
 	errors "errors"
 	http "net/http"
 	strings "strings"
+
+	v1beta1 "buf.build/gen/go/bufbuild/registry/protocolbuffers/go/buf/registry/plugin/v1beta1"
+	connect "connectrpc.com/connect"
 )
 
 // This is a compile-time assertion to ensure that this generated file and the connect package are

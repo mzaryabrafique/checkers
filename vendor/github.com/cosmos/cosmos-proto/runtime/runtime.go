@@ -2,10 +2,11 @@ package runtime
 
 import (
 	"fmt"
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/runtime/protoiface"
 	"io"
 	"math/bits"
+
+	"google.golang.org/protobuf/proto"
+	"google.golang.org/protobuf/runtime/protoiface"
 )
 
 func Sov(x uint64) (n int) {

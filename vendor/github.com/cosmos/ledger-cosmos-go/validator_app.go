@@ -20,7 +20,7 @@ import (
 	"errors"
 	"math"
 
-	"github.com/zondax/ledger-go"
+	ledger_go "github.com/zondax/ledger-go"
 )
 
 const (

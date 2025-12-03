@@ -92,9 +92,10 @@ not print their values, while the generated String method will always print all 
 package stringer
 
 import (
+	"strings"
+
 	"github.com/cosmos/gogoproto/gogoproto"
 	"github.com/cosmos/gogoproto/protoc-gen-gogo/generator"
-	"strings"
 )
 
 type stringer struct {

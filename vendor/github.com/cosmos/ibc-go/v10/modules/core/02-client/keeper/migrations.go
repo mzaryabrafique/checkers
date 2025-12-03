@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/cosmos/ibc-go/v10/modules/core/02-client/migrations/v7"
+	v7 "github.com/cosmos/ibc-go/v10/modules/core/02-client/migrations/v7"
 	"github.com/cosmos/ibc-go/v10/modules/core/02-client/types"
 	host "github.com/cosmos/ibc-go/v10/modules/core/24-host"
 	"github.com/cosmos/ibc-go/v10/modules/core/exported"

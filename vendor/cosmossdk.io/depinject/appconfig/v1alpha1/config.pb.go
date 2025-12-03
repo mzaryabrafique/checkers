@@ -5,11 +5,12 @@ package v1alpha1
 
 import (
 	fmt "fmt"
-	proto "github.com/cosmos/gogoproto/proto"
-	any "github.com/cosmos/gogoproto/types/any"
 	io "io"
 	math "math"
 	math_bits "math/bits"
+
+	proto "github.com/cosmos/gogoproto/proto"
+	any "github.com/cosmos/gogoproto/types/any"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

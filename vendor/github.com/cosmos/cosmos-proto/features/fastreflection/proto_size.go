@@ -2,12 +2,13 @@ package fastreflection
 
 import (
 	"fmt"
+	"strconv"
+	"strings"
+
 	"github.com/cosmos/cosmos-proto/generator"
 	"google.golang.org/protobuf/compiler/protogen"
 	"google.golang.org/protobuf/encoding/protowire"
 	"google.golang.org/protobuf/reflect/protoreflect"
-	"strconv"
-	"strings"
 )
 
 var kindToGoType = map[protoreflect.Kind]string{

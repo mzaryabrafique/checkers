@@ -12,7 +12,7 @@ import (
 // Key types for all built-in types.
 // We can use these type as key type when creating a new skip list.
 //
-//     list := New(Int) // Use int as key.
+//	list := New(Int) // Use int as key.
 const (
 	Byte     = byteType
 	ByteAsc  = Byte

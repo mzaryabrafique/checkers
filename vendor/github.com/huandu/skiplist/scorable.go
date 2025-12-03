@@ -10,9 +10,9 @@ import "reflect"
 //
 // For any key `k1` and `k2`, the calculated score must follow these rules.
 //
-//     - If Compare(k1, k2) is positive, k1.Score() >= k2.Score() must be true.
-//     - If Compare(k1, k2) is negative, k1.Score() <= k2.Score() must be true.
-//     - If Compare(k1, k2) is 0, k1.Score() == k2.Score() must be true.
+//   - If Compare(k1, k2) is positive, k1.Score() >= k2.Score() must be true.
+//   - If Compare(k1, k2) is negative, k1.Score() <= k2.Score() must be true.
+//   - If Compare(k1, k2) is 0, k1.Score() == k2.Score() must be true.
 type Scorable interface {
 	Score() float64
 }

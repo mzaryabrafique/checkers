@@ -24,6 +24,5 @@ Here's an example of how to use it inside an existing gRPC Go server on a separa
 	})
 
 If you'd like to have a standalone binary, please take a look at `grpcwebproxy`.
-
 */
 package grpcweb

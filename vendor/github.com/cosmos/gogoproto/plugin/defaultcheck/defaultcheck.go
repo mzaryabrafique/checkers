@@ -52,9 +52,10 @@ package defaultcheck
 
 import (
 	"fmt"
+	"os"
+
 	"github.com/cosmos/gogoproto/gogoproto"
 	"github.com/cosmos/gogoproto/protoc-gen-gogo/generator"
-	"os"
 )
 
 type plugin struct {

@@ -21,11 +21,12 @@
 package registryv1alpha1
 
 import (
+	reflect "reflect"
+	unsafe "unsafe"
+
 	v1alpha1 "github.com/bufbuild/buf/private/gen/proto/go/buf/alpha/module/v1alpha1"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	unsafe "unsafe"
 )
 
 const (

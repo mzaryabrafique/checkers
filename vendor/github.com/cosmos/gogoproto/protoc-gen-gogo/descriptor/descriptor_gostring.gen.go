@@ -5,13 +5,14 @@ package descriptor
 
 import (
 	fmt "fmt"
-	github_com_cosmos_gogoproto_proto "github.com/cosmos/gogoproto/proto"
-	proto "github.com/cosmos/gogoproto/proto"
 	math "math"
 	reflect "reflect"
 	sort "sort"
 	strconv "strconv"
 	strings "strings"
+
+	github_com_cosmos_gogoproto_proto "github.com/cosmos/gogoproto/proto"
+	proto "github.com/cosmos/gogoproto/proto"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

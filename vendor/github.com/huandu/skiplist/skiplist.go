@@ -8,28 +8,28 @@
 //
 // Here is a sample to use this package.
 //
-//     // Creates a new skip list and restricts key type to int-like types.
-//     list := skiplist.New(skiplist.Int)
+//	// Creates a new skip list and restricts key type to int-like types.
+//	list := skiplist.New(skiplist.Int)
 //
-//     // Adds some values for keys.
-//     list.Set(20, "Hello")
-//     list.Set(10, "World")
-//     list.Set(40, true) // Value type is not restricted.
-//     list.Set(40, 1000) // Replace the of an existing element.
+//	// Adds some values for keys.
+//	list.Set(20, "Hello")
+//	list.Set(10, "World")
+//	list.Set(40, true) // Value type is not restricted.
+//	list.Set(40, 1000) // Replace the of an existing element.
 //
-//     // Finds elements.
-//     e := list.Get(10)           // Returns the element with the key.
-//     _ = e.Value.(string)
-//     v, ok := list.GetValue(20)  // Directly get value of the element. If the key is not found, ok is false.
-//     v2 := list.MustGetValue(10) // Directly get value of the element. Panic if the key is not found.
-//     notFound := list.Get(15)    // Returns nil if the key is not found.
+//	// Finds elements.
+//	e := list.Get(10)           // Returns the element with the key.
+//	_ = e.Value.(string)
+//	v, ok := list.GetValue(20)  // Directly get value of the element. If the key is not found, ok is false.
+//	v2 := list.MustGetValue(10) // Directly get value of the element. Panic if the key is not found.
+//	notFound := list.Get(15)    // Returns nil if the key is not found.
 //
-//     // Removes an element and gets removed element.
-//     old := list.Remove(40)
-//     notFound := list.Remove(-20) // Returns nil if the key is not found.
+//	// Removes an element and gets removed element.
+//	old := list.Remove(40)
+//	notFound := list.Remove(-20) // Returns nil if the key is not found.
 //
-//     // Initializes the list again to clean up all elements in the list.
-//     list.Init()
+//	// Initializes the list again to clean up all elements in the list.
+//	list.Init()
 package skiplist
 
 import (

@@ -5,12 +5,13 @@ package signing
 
 import (
 	fmt "fmt"
-	types "github.com/cosmos/cosmos-sdk/crypto/types"
-	proto "github.com/cosmos/gogoproto/proto"
-	any "github.com/cosmos/gogoproto/types/any"
 	io "io"
 	math "math"
 	math_bits "math/bits"
+
+	types "github.com/cosmos/cosmos-sdk/crypto/types"
+	proto "github.com/cosmos/gogoproto/proto"
+	any "github.com/cosmos/gogoproto/types/any"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

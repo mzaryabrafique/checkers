@@ -2,13 +2,14 @@ package fastreflection
 
 import (
 	"fmt"
+	"sort"
+	"strconv"
+	"strings"
+
 	"github.com/cosmos/cosmos-proto/generator"
 	"google.golang.org/protobuf/compiler/protogen"
 	"google.golang.org/protobuf/encoding/protowire"
 	"google.golang.org/protobuf/reflect/protoreflect"
-	"sort"
-	"strconv"
-	"strings"
 )
 
 type counter int

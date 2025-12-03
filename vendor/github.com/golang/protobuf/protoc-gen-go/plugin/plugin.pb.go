@@ -4,10 +4,11 @@
 package plugin_go
 
 import (
+	reflect "reflect"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	pluginpb "google.golang.org/protobuf/types/pluginpb"
-	reflect "reflect"
 )
 
 // Symbols defined in public import of google/protobuf/compiler/plugin.proto.

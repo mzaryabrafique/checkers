@@ -7,14 +7,15 @@ import (
 	bytes "bytes"
 	encoding_binary "encoding/binary"
 	fmt "fmt"
-	proto "github.com/cosmos/gogoproto/proto"
-	github_com_cosmos_gogoproto_sortkeys "github.com/cosmos/gogoproto/sortkeys"
 	io "io"
 	math "math"
 	math_bits "math/bits"
 	reflect "reflect"
 	strconv "strconv"
 	strings "strings"
+
+	proto "github.com/cosmos/gogoproto/proto"
+	github_com_cosmos_gogoproto_sortkeys "github.com/cosmos/gogoproto/sortkeys"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

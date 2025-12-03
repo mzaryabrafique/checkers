@@ -1,4 +1,5 @@
-//+build ledger_mock
+//go:build ledger_mock
+// +build ledger_mock
 
 /*******************************************************************************
 *   (c) 2018 - 2022 ZondaX AG
