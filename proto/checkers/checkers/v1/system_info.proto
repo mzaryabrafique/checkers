@@ -1,0 +1,9 @@
+syntax = "proto3";
+package checkers.checkers.v1;
+
+option go_package = "github.com/alice/checkers/x/checkers/types";
+
+// SystemInfo defines the SystemInfo message.
+message SystemInfo {
+  uint64 next_id = 1;
+}

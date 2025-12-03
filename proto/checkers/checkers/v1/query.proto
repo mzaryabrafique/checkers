@@ -1,0 +1,77 @@
+syntax = "proto3";
+
+package checkers.checkers.v1;
+
+import "amino/amino.proto";
+import "checkers/checkers/v1/params.proto";
+import "checkers/checkers/v1/stored_game.proto";
+import "checkers/checkers/v1/system_info.proto";
+import "cosmos/base/query/v1beta1/pagination.proto";
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+
+option go_package = "github.com/alice/checkers/x/checkers/types";
+
+// Query defines the gRPC querier service.
+service Query {
+  // Parameters queries the parameters of the module.
+  rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
+    option (google.api.http).get = "/alice/checkers/checkers/v1/params";
+  }
+
+  // Queries a SystemInfo by index.
+  rpc GetSystemInfo(QueryGetSystemInfoRequest) returns (QueryGetSystemInfoResponse) {
+    option (google.api.http).get = "/alice/checkers/checkers/v1/system_info";
+  }
+
+  // ListStoredGame Queries a list of StoredGame items.
+  rpc GetStoredGame(QueryGetStoredGameRequest) returns (QueryGetStoredGameResponse) {
+    option (google.api.http).get = "/alice/checkers/checkers/v1/stored_game/{index}";
+  }
+
+  // ListStoredGame defines the ListStoredGame RPC.
+  rpc ListStoredGame(QueryAllStoredGameRequest) returns (QueryAllStoredGameResponse) {
+    option (google.api.http).get = "/alice/checkers/checkers/v1/stored_game";
+  }
+}
+
+// QueryParamsRequest is request type for the Query/Params RPC method.
+message QueryParamsRequest {}
+
+// QueryParamsResponse is response type for the Query/Params RPC method.
+message QueryParamsResponse {
+  // params holds all the parameters of this module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}
+
+// QueryGetSystemInfoRequest defines the QueryGetSystemInfoRequest message.
+message QueryGetSystemInfoRequest {}
+
+// QueryGetSystemInfoResponse defines the QueryGetSystemInfoResponse message.
+message QueryGetSystemInfoResponse {
+  SystemInfo system_info = 1 [(gogoproto.nullable) = false];
+}
+
+// QueryGetStoredGameRequest defines the QueryGetStoredGameRequest message.
+message QueryGetStoredGameRequest {
+  string index = 1;
+}
+
+// QueryGetStoredGameResponse defines the QueryGetStoredGameResponse message.
+message QueryGetStoredGameResponse {
+  StoredGame stored_game = 1 [(gogoproto.nullable) = false];
+}
+
+// QueryAllStoredGameRequest defines the QueryAllStoredGameRequest message.
+message QueryAllStoredGameRequest {
+  cosmos.base.query.v1beta1.PageRequest pagination = 1;
+}
+
+// QueryAllStoredGameResponse defines the QueryAllStoredGameResponse message.
+message QueryAllStoredGameResponse {
+  repeated StoredGame stored_game = 1 [(gogoproto.nullable) = false];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2;
+}
