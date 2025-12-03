@@ -26,3 +26,20 @@ func TestCreateGame(t *testing.T) {
 		GameIndex: "", // TODO: update with a proper value when updated
 	}, *createResponse)
 }
+
+func TestCreateGameInvalidAddress(t *testing.T) {
+	msgServer, context := setupMsgServer(t)
+	_, err := msgServer.CreateGame(context, &types.MsgCreateGame{
+		Creator: alice,
+		Black:   "invalid_address",
+		Red:     carol,
+	})
+	require.ErrorIs(t, err, types.ErrInvalidBlack)
+
+	_, err = msgServer.CreateGame(context, &types.MsgCreateGame{
+		Creator: alice,
+		Black:   bob,
+		Red:     "invalid_address",
+	})
+	require.ErrorIs(t, err, types.ErrInvalidRed)
+}
