@@ -20,6 +20,9 @@ service Msg {
 
   // CreateGame defines the CreateGame RPC.
   rpc CreateGame(MsgCreateGame) returns (MsgCreateGameResponse);
+
+  // PlayMove defines the PlayMove RPC.
+  rpc PlayMove(MsgPlayMove) returns (MsgPlayMoveResponse);
 }
 
 // MsgUpdateParams is the Msg/UpdateParams request type.
@@ -54,4 +57,22 @@ message MsgCreateGame {
 // MsgCreateGameResponse defines the MsgCreateGameResponse message.
 message MsgCreateGameResponse {
   string game_index = 1;
+}
+
+// MsgPlayMove defines the MsgPlayMove message.
+message MsgPlayMove {
+  option (cosmos.msg.v1.signer) = "creator";
+  string creator = 1 [(cosmos_proto.scalar) = "cosmos.AddressString"];
+  string game_index = 2;
+  uint64 from_x = 3;
+  uint64 from_y = 4;
+  uint64 to_x = 5;
+  uint64 to_y = 6;
+}
+
+// MsgPlayMoveResponse defines the MsgPlayMoveResponse message.
+message MsgPlayMoveResponse {
+  int64 captured_x = 1;
+  int64 captured_y = 2;
+  string winner = 3;
 }

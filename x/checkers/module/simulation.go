@@ -44,6 +44,21 @@ func (am AppModule) WeightedOperations(simState module.SimulationState) []simtyp
 		weightMsgCreateGame,
 		checkerssimulation.SimulateMsgCreateGame(am.authKeeper, am.bankKeeper, am.keeper, simState.TxConfig),
 	))
+	const (
+		opWeightMsgPlayMove          = "op_weight_msg_checkers"
+		defaultWeightMsgPlayMove int = 100
+	)
+
+	var weightMsgPlayMove int
+	simState.AppParams.GetOrGenerate(opWeightMsgPlayMove, &weightMsgPlayMove, nil,
+		func(_ *rand.Rand) {
+			weightMsgPlayMove = defaultWeightMsgPlayMove
+		},
+	)
+	operations = append(operations, simulation.NewWeightedOperation(
+		weightMsgPlayMove,
+		checkerssimulation.SimulateMsgPlayMove(am.authKeeper, am.bankKeeper, am.keeper, simState.TxConfig),
+	))
 
 	return operations
 }

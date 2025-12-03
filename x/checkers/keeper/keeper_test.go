@@ -48,8 +48,8 @@ func initFixture(t *testing.T) *fixture {
 		t.Fatalf("failed to set params: %v", err)
 	}
 	if err := k.SystemInfo.Set(ctx, types.SystemInfo{NextId: 1}); err != nil {
-        t.Fatalf("failed to set system info: %v", err)
-    }
+		t.Fatalf("failed to set system info: %v", err)
+	}
 
 	return &fixture{
 		ctx:          ctx,

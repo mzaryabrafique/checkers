@@ -52,6 +52,12 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					Short:          "Send a createGame tx",
 					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "black"}, {ProtoField: "red"}},
 				},
+				{
+					RpcMethod:      "PlayMove",
+					Use:            "play-move [game-index] [from-x] [from-y] [to-x] [to-y]",
+					Short:          "Send a playMove tx",
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "game_index"}, {ProtoField: "from_x"}, {ProtoField: "from_y"}, {ProtoField: "to_x"}, {ProtoField: "to_y"}},
+				},
 				// this line is used by ignite scaffolding # autocli/tx
 			},
 		},

@@ -1,6 +1,5 @@
 package testutil
 
-
 import (
 	"github.com/alice/checkers/testutil/sample"
 )
