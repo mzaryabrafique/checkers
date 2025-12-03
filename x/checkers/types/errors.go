@@ -12,7 +12,7 @@ var (
 )
 
 var (
-	ErrInvalidBlack     = errors.Register(ModuleName, 1100, "black address is invalid: %s")
-	ErrInvalidRed       = errors.Register(ModuleName, 1101, "red address is invalid: %s")
-	ErrGameNotParseable = errors.Register(ModuleName, 1102, "game cannot be parsed")
+	ErrInvalidBlack     = errors.Register(ModuleName, 1101, "black address is invalid: %s")
+	ErrInvalidRed       = errors.Register(ModuleName, 1102, "red address is invalid: %s")
+	ErrGameNotParseable = errors.Register(ModuleName, 1103, "game cannot be parsed")
 )

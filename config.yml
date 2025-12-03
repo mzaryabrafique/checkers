@@ -1,5 +1,7 @@
 version: 1
 validation: sovereign
+build:
+  main: cmd/checkersd
 default_denom: stake
 accounts: 
 - name: alice
